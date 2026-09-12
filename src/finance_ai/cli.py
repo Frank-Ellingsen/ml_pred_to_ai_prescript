@@ -43,9 +43,10 @@ def run_analysis(
 
 
 def train_models() -> None:
-    """Train predictive forecasting models and save artifacts."""
+    """Train predictive forecasting models and save artifacts, optionally logging to MLflow."""
     import numpy as np
     from finance_ai.ml.forecaster import ProjectCostForecaster
+    from finance_ai.ml.mlflow_tracking import log_training_run
 
     print("Training predictive project cost forecaster...")
     # Synthetic time-series features: [step, lag_1, rolling_mean_2]
@@ -59,8 +60,23 @@ def train_models() -> None:
 
     forecaster = ProjectCostForecaster(model_version="v2026.1")
     forecaster.fit(X_train, y_train)
-    forecaster.save("artifacts/models/project_cost_forecaster.joblib")
-    print("Model trained and saved to artifacts/models/project_cost_forecaster.joblib")
+
+    artifact_path = "artifacts/models/project_cost_forecaster.joblib"
+    forecaster.save(artifact_path)
+
+    tracking_payload = log_training_run(
+        model_name="project_cost_forecaster",
+        model_version="v2026.1",
+        metric_name="residual_std",
+        metric_value=float(forecaster.residual_std),
+        artifact_path=artifact_path,
+    )
+
+    print(f"Model trained and saved to {artifact_path}")
+    if tracking_payload.get("mlflow_available"):
+        print(f"MLflow run recorded: {tracking_payload.get('run_id')}")
+    else:
+        print("MLflow package unavailable; tracking payload emitted without remote run creation.")
 
 
 def main() -> None:
