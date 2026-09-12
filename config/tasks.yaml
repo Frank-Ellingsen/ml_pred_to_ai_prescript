@@ -1,0 +1,66 @@
+analyze_financials:
+  description: >
+    Analyze the financial question:
+    {question}
+
+    Period:
+    {period}
+
+    Currency:
+    {currency}
+
+    Use only the authoritative financial information supplied through approved tools and the workflow state.
+    When financial values are required, use the appropriate tool rather than estimating or calculating them yourself.
+
+    Available information may include:
+    - actual financial results
+    - budgets
+    - forecasts
+    - forecast uncertainty
+    - deterministic variance calculations
+    - scenario results
+    - retrieved financial documents
+
+    Identify:
+    1. the most important financial findings
+    2. material variances
+    3. relevant forecast uncertainty
+    4. scenario implications
+    5. supporting evidence
+    6. areas requiring investigation
+
+    Do not invent financial values.
+    Do not modify values returned by tools.
+    Do not propose financial transactions.
+  expected_output: >
+    A structured FinancialAnalysis object containing:
+    - summary
+    - findings
+    - recommendations
+    - uncertainty
+    - limitations
+  agent: financial_analyst
+
+generate_report:
+  description: >
+    Create a concise management report from the validated financial analysis.
+    Preserve all authoritative financial values exactly.
+
+    Clearly distinguish:
+    - actuals
+    - budget
+    - forecast
+    - scenario
+    - uncertainty
+    - interpretation
+
+    Include supporting evidence references where available.
+    Do not introduce financial values that are not present in the validated analysis.
+  expected_output: >
+    A structured FinancialReport containing:
+    - executive_summary
+    - key_findings
+    - risks_and_uncertainty
+    - recommended_investigations
+    - evidence
+  agent: reporting_agent

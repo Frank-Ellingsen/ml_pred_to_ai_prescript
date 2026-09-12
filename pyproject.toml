@@ -1,0 +1,156 @@
+[project]
+name = "project-finance-ai"
+version = "0.1.0"
+description = "Reusable financial-analysis platform combining predictive ML, CrewAI, Generative AI, RAG, scenarios, and deterministic financial calculations."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Frank Ellingsen", email = "frank@example.com" }
+]
+keywords = [
+    "finance",
+    "machine-learning",
+    "generative-ai",
+    "crewai",
+    "rag",
+    "forecasting",
+    "financial-analysis",
+    "project-controlling",
+]
+
+dependencies = [
+    # Core
+    "pydantic>=2.9,<3.0",
+    "pydantic-settings>=2.5,<3.0",
+    "python-dotenv>=1.0,<2.0",
+    "pyyaml>=6.0,<7.0",
+
+    # Data
+    "pandas>=2.2,<3.0",
+    "numpy>=1.26,<3.0",
+
+    # Machine Learning & Forecasting
+    "scikit-learn>=1.5,<2.0",
+    "joblib>=1.4,<2.0",
+    "statsmodels>=0.14,<1.0",
+
+    # Financial Calculations
+    "scipy>=1.14,<2.0",
+
+    # Agent Orchestration
+    "crewai>=1.15.0",
+
+    # API & Web UI
+    "fastapi>=0.115,<1.0",
+    "uvicorn[standard]>=0.30,<1.0",
+    "streamlit>=1.38,<2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0,<9.0",
+    "pytest-asyncio>=0.24,<1.0",
+    "pytest-cov>=5.0,<7.0",
+    "httpx>=0.27,<1.0",
+    "ruff>=0.6,<1.0",
+    "mypy>=1.11,<2.0",
+]
+notebooks = [
+    "jupyterlab>=4.2,<5.0",
+    "matplotlib>=3.9,<4.0",
+    "seaborn>=0.13,<1.0",
+]
+postgres = [
+    "psycopg[binary]>=3.2,<4.0",
+    "pgvector>=0.3,<1.0",
+    "sqlalchemy>=2.0,<3.0",
+]
+
+[project.scripts]
+finance-init-db = "finance_ai.cli:init_database"
+finance-seed-db = "finance_ai.cli:seed_database"
+finance-run-analysis = "finance_ai.cli:run_analysis"
+finance-train = "finance_ai.cli:train_models"
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/finance_ai"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = [
+    "-ra",
+    "--strict-markers",
+    "--strict-config",
+]
+markers = [
+    "unit: Fast isolated unit tests",
+    "contract: Pydantic and API contract tests",
+    "database: SQLite repository tests",
+    "forecasting: Predictive ML model tests",
+    "agent: CrewAI agent and tool tests",
+    "flow: CrewAI flow orchestration tests",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["finance_ai"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "if __name__ == .__main__.:",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "I",
+    "B",
+    "UP",
+    "SIM",
+    "C4",
+    "RUF",
+]
+ignore = [
+    "E501",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["finance_ai"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+module = [
+    "crewai.*",
+    "streamlit.*",
+    "statsmodels.*",
+    "scipy.*",
+    "sklearn.*",
+]
+ignore_missing_imports = true

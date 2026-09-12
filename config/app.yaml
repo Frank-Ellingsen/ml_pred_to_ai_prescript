@@ -1,0 +1,22 @@
+# Application Configuration
+app:
+  name: "project-finance-ai"
+  version: "0.1.0"
+  environment: "development"
+
+database:
+  sqlite_path: "data/processed/finance.db"
+  wal_mode: true
+  busy_timeout_ms: 5000
+
+financial_rules:
+  default_currency: "NOK"
+  material_variance_threshold: 0.05       # 5% variance requires investigation
+  high_risk_variance_threshold: 0.15       # 15% variance escalates to project board
+  confidence_interval_level: 0.90          # 90% prediction interval
+
+llm:
+  provider: "ollama"
+  model: "llama3.2"
+  temperature: 0.1
+  request_timeout_seconds: 60

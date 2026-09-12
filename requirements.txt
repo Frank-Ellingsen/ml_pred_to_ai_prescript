@@ -1,0 +1,29 @@
+# Core Dependencies
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+python-dotenv>=1.0.1
+pyyaml>=6.0.2
+
+# Data Processing
+pandas>=2.2.2
+numpy>=1.26.4
+
+# Machine Learning & Forecasting
+scikit-learn>=1.5.1
+joblib>=1.4.2
+statsmodels>=0.14.2
+scipy>=1.14.0
+
+# Agent Framework
+crewai>=1.15.0
+
+# API & Presentation Layer
+fastapi>=0.115.0
+uvicorn>=0.30.0
+streamlit>=1.38.0
+
+# Development & Testing
+pytest>=8.0.0
+pytest-asyncio>=0.24.0
+httpx>=0.27.0
+ruff>=0.6.0

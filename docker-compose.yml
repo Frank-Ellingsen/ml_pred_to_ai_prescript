@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: finance-ai-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DATABASE_PATH=/app/data/processed/finance.db
+      - DEFAULT_CURRENCY=NOK
+      - OPENAI_API_BASE=${OPENAI_API_BASE:-http://host.docker.internal:11434/v1}
+      - OPENAI_MODEL_NAME=${OPENAI_MODEL_NAME:-ollama/llama3.2}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-NA}
+    volumes:
+      - finance_data:/app/data/processed
+      - finance_feedback:/app/data/feedback
+      - finance_artifacts:/app/artifacts
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: finance-ai-dashboard
+    restart: unless-stopped
+    command: ["streamlit", "run", "src/finance_ai/ui/dashboard.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    ports:
+      - "8501:8501"
+    environment:
+      - DATABASE_PATH=/app/data/processed/finance.db
+      - API_URL=http://api:8000
+      - DEFAULT_CURRENCY=NOK
+    volumes:
+      - finance_data:/app/data/processed:ro
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  finance_data:
+    driver: local
+  finance_feedback:
+    driver: local
+  finance_artifacts:
+    driver: local

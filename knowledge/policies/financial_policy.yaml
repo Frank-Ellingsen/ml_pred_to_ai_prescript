@@ -1,0 +1,27 @@
+policy_id: "POL-FIN-2026-01"
+title: "Project Controlling Variance and Escalation Policy"
+version: "1.0"
+effective_date: "2026-01-01"
+authority: "Finance Directorate"
+
+thresholds:
+  immaterial_variance_pct: 0.02
+  monitoring_variance_pct: 0.05
+  escalation_variance_pct: 0.10
+  critical_variance_pct: 0.20
+
+rules:
+  - id: "RULE-01"
+    name: "Material Variance Review"
+    condition: "Variance exceeding 5% in milestone cost or revenue"
+    action: "Mandatory investigation of root causes and updated Estimate at Completion (EAC)."
+
+  - id: "RULE-02"
+    name: "Contingency Allocation Gate"
+    condition: "EAC exceeds Approved Baseline Budget by more than 10%"
+    action: "Escalate to Project Steering Committee for risk contingency release authorization."
+
+  - id: "RULE-03"
+    name: "Immutable Actuals Protection"
+    condition: "Historical ERP actuals"
+    action: "Actuals cannot be altered by AI, forecast updates, or manual adjustments without formal journal reclassification."

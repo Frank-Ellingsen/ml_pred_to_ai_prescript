@@ -1,0 +1,15 @@
+catalog_version: "1.0"
+documents:
+  - id: "POL-FIN-2026-01"
+    title: "Project Controlling Variance and Escalation Policy"
+    type: "policy"
+    path: "knowledge/policies/financial_policy.yaml"
+    version: "1.0"
+    owner: "Finance Directorate"
+
+  - id: "RB-FIN-VAR-01"
+    title: "Cost Variance and EAC Investigation Runbook"
+    type: "runbook"
+    path: "knowledge/runbooks/cost_variance_investigation.md"
+    version: "1.0"
+    owner: "Project Controlling"
