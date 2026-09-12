@@ -2,6 +2,7 @@ import sqlite3
 from pathlib import Path
 import pandas as pd
 import streamlit as st
+import streamlit.components.v1 as components
 
 DB_PATH = Path("data/processed/finance.db")
 
@@ -173,10 +174,14 @@ def main():
     db_path, tables, summary = load_state()
 
     st.title("Project Finance AI Dashboard")
+    st.image("predictive_ml_genai_reference_architecture.png", caption="Predictive ML + GenAI Reference Architecture")
 
     with st.spinner("Loading data..."):
         # reload into UI once and display card metrics
         pass
+
+    st.markdown("### Project Vessel 2026 Mystery")
+    components.iframe("https://www.youtube.com/embed/eH8x9mLk7ug", height=320, scrolling=False)
 
     tabs = st.tabs(["Data", "Monitoring", "Results", "Actions"])
 
