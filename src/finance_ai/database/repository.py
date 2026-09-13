@@ -312,7 +312,7 @@ def insert_document(doc: dict[str, Any], db_path: Path | str | None = None) -> N
 def insert_feedback(feedback: dict[str, Any], db_path: Path | str | None = None) -> None:
     """Insert human feedback and decision review."""
     sql = """
-    INSERT INTO feedback (
+    INSERT OR REPLACE INTO feedback (
         feedback_id, analysis_id, decision, actual_outcome, reviewer, timestamp, comments
     ) VALUES (?, ?, ?, ?, ?, ?, ?)
     """

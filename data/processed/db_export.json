@@ -1,0 +1,897 @@
+{
+  "actuals": [
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2024-Q3",
+      "revenue": 38000000.0,
+      "cost": 31000000.0,
+      "customers": 1,
+      "units": 1,
+      "currency": "NOK",
+      "data_as_of": "2024-10-05T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2024-Q4",
+      "revenue": 42000000.0,
+      "cost": 34500000.0,
+      "customers": 1,
+      "units": 1,
+      "currency": "NOK",
+      "data_as_of": "2025-01-08T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2025-Q1",
+      "revenue": 46500000.0,
+      "cost": 37200000.0,
+      "customers": 1,
+      "units": 2,
+      "currency": "NOK",
+      "data_as_of": "2025-04-06T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2025-Q2",
+      "revenue": 45000000.0,
+      "cost": 42000000.0,
+      "customers": 1,
+      "units": 2,
+      "currency": "NOK",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2024-Q3",
+      "revenue": 62000000.0,
+      "cost": 51000000.0,
+      "customers": 1,
+      "units": 1,
+      "currency": "NOK",
+      "data_as_of": "2024-10-05T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2024-Q4",
+      "revenue": 68000000.0,
+      "cost": 56000000.0,
+      "customers": 1,
+      "units": 1,
+      "currency": "NOK",
+      "data_as_of": "2025-01-08T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2025-Q1",
+      "revenue": 74000000.0,
+      "cost": 60500000.0,
+      "customers": 1,
+      "units": 1,
+      "currency": "NOK",
+      "data_as_of": "2025-04-06T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2025-Q2",
+      "revenue": 79000000.0,
+      "cost": 73500000.0,
+      "customers": 1,
+      "units": 1,
+      "currency": "NOK",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2024-Q3",
+      "revenue": 28000000.0,
+      "cost": 22500000.0,
+      "customers": 1,
+      "units": 4,
+      "currency": "NOK",
+      "data_as_of": "2024-10-05T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2024-Q4",
+      "revenue": 31000000.0,
+      "cost": 25000000.0,
+      "customers": 1,
+      "units": 4,
+      "currency": "NOK",
+      "data_as_of": "2025-01-08T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2025-Q1",
+      "revenue": 35000000.0,
+      "cost": 28200000.0,
+      "customers": 1,
+      "units": 4,
+      "currency": "NOK",
+      "data_as_of": "2025-04-06T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2025-Q2",
+      "revenue": 30500000.0,
+      "cost": 29800000.0,
+      "customers": 1,
+      "units": 4,
+      "currency": "NOK",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2024-Q3",
+      "revenue": 21000000.0,
+      "cost": 18000000.0,
+      "customers": 1,
+      "units": 1,
+      "currency": "NOK",
+      "data_as_of": "2024-10-05T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2024-Q4",
+      "revenue": 24500000.0,
+      "cost": 20800000.0,
+      "customers": 1,
+      "units": 1,
+      "currency": "NOK",
+      "data_as_of": "2025-01-08T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2025-Q1",
+      "revenue": 27000000.0,
+      "cost": 23000000.0,
+      "customers": 1,
+      "units": 1,
+      "currency": "NOK",
+      "data_as_of": "2025-04-06T00:00:00Z"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2025-Q2",
+      "revenue": 29000000.0,
+      "cost": 25500000.0,
+      "customers": 1,
+      "units": 1,
+      "currency": "NOK",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    }
+  ],
+  "budgets": [
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2024-Q3",
+      "metric": "revenue",
+      "amount": 38000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2024-Q3",
+      "metric": "cost",
+      "amount": 31000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2024-Q4",
+      "metric": "revenue",
+      "amount": 42000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2024-Q4",
+      "metric": "cost",
+      "amount": 34000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2025-Q1",
+      "metric": "revenue",
+      "amount": 46000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2025-Q1",
+      "metric": "cost",
+      "amount": 37000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2025-Q2",
+      "metric": "revenue",
+      "amount": 50000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2025-Q2",
+      "metric": "cost",
+      "amount": 38000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2025-Q3",
+      "metric": "revenue",
+      "amount": 54000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2025-Q3",
+      "metric": "cost",
+      "amount": 40000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2025-Q4",
+      "metric": "revenue",
+      "amount": 58000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Vessel-2026",
+      "period": "2025-Q4",
+      "metric": "cost",
+      "amount": 42000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2024-Q3",
+      "metric": "revenue",
+      "amount": 62000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2024-Q3",
+      "metric": "cost",
+      "amount": 51000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2024-Q4",
+      "metric": "revenue",
+      "amount": 68000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2024-Q4",
+      "metric": "cost",
+      "amount": 55000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2025-Q1",
+      "metric": "revenue",
+      "amount": 73000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2025-Q1",
+      "metric": "cost",
+      "amount": 59000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2025-Q2",
+      "metric": "revenue",
+      "amount": 82000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2025-Q2",
+      "metric": "cost",
+      "amount": 65000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2025-Q3",
+      "metric": "revenue",
+      "amount": 90000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2025-Q3",
+      "metric": "cost",
+      "amount": 70000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2025-Q4",
+      "metric": "revenue",
+      "amount": 95000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Subsea-Platform-2026",
+      "period": "2025-Q4",
+      "metric": "cost",
+      "amount": 72000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2024-Q3",
+      "metric": "revenue",
+      "amount": 28000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2024-Q3",
+      "metric": "cost",
+      "amount": 22000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2024-Q4",
+      "metric": "revenue",
+      "amount": 31000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2024-Q4",
+      "metric": "cost",
+      "amount": 24500000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2025-Q1",
+      "metric": "revenue",
+      "amount": 35000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2025-Q1",
+      "metric": "cost",
+      "amount": 28000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2025-Q2",
+      "metric": "revenue",
+      "amount": 38000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2025-Q2",
+      "metric": "cost",
+      "amount": 29500000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2025-Q3",
+      "metric": "revenue",
+      "amount": 42000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2025-Q3",
+      "metric": "cost",
+      "amount": 31000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2025-Q4",
+      "metric": "revenue",
+      "amount": 45000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-Avionics-Defense-2026",
+      "period": "2025-Q4",
+      "metric": "cost",
+      "amount": 33000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2024-Q3",
+      "metric": "revenue",
+      "amount": 21000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2024-Q3",
+      "metric": "cost",
+      "amount": 18000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2024-Q4",
+      "metric": "revenue",
+      "amount": 24000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2024-Q4",
+      "metric": "cost",
+      "amount": 20000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2025-Q1",
+      "metric": "revenue",
+      "amount": 27000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2025-Q1",
+      "metric": "cost",
+      "amount": 22500000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2025-Q2",
+      "metric": "revenue",
+      "amount": 30000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2025-Q2",
+      "metric": "cost",
+      "amount": 24500000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2025-Q3",
+      "metric": "revenue",
+      "amount": 34000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2025-Q3",
+      "metric": "cost",
+      "amount": 27000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2025-Q4",
+      "metric": "revenue",
+      "amount": 36000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    },
+    {
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "period": "2025-Q4",
+      "metric": "cost",
+      "amount": 28000000.0,
+      "currency": "NOK",
+      "budget_version": "v1.0"
+    }
+  ],
+  "forecasts": [
+    {
+      "forecast_id": "FC-VES-REV-Q3",
+      "entity_id": "Project-Vessel-2026",
+      "metric": "revenue",
+      "period": "2025-Q3",
+      "point_estimate": 51500000.0,
+      "lower": 48200000.0,
+      "upper": 54800000.0,
+      "confidence": 0.9,
+      "model_name": "project_cost_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-VES-REV-Q4",
+      "entity_id": "Project-Vessel-2026",
+      "metric": "revenue",
+      "period": "2025-Q4",
+      "point_estimate": 59000000.0,
+      "lower": 54000000.0,
+      "upper": 64000000.0,
+      "confidence": 0.9,
+      "model_name": "project_cost_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-VES-CST-Q3",
+      "entity_id": "Project-Vessel-2026",
+      "metric": "cost",
+      "period": "2025-Q3",
+      "point_estimate": 43800000.0,
+      "lower": 41500000.0,
+      "upper": 46200000.0,
+      "confidence": 0.9,
+      "model_name": "project_cost_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-VES-CST-Q4",
+      "entity_id": "Project-Vessel-2026",
+      "metric": "cost",
+      "period": "2025-Q4",
+      "point_estimate": 44200000.0,
+      "lower": 41000000.0,
+      "upper": 47500000.0,
+      "confidence": 0.9,
+      "model_name": "project_cost_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-SUB-REV-Q3",
+      "entity_id": "Project-Subsea-Platform-2026",
+      "metric": "revenue",
+      "period": "2025-Q3",
+      "point_estimate": 86500000.0,
+      "lower": 82000000.0,
+      "upper": 91000000.0,
+      "confidence": 0.9,
+      "model_name": "subsea_epc_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-SUB-REV-Q4",
+      "entity_id": "Project-Subsea-Platform-2026",
+      "metric": "revenue",
+      "period": "2025-Q4",
+      "point_estimate": 98000000.0,
+      "lower": 92000000.0,
+      "upper": 104000000.0,
+      "confidence": 0.9,
+      "model_name": "subsea_epc_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-SUB-CST-Q3",
+      "entity_id": "Project-Subsea-Platform-2026",
+      "metric": "cost",
+      "period": "2025-Q3",
+      "point_estimate": 77200000.0,
+      "lower": 73500000.0,
+      "upper": 81000000.0,
+      "confidence": 0.9,
+      "model_name": "subsea_epc_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-SUB-CST-Q4",
+      "entity_id": "Project-Subsea-Platform-2026",
+      "metric": "cost",
+      "period": "2025-Q4",
+      "point_estimate": 76000000.0,
+      "lower": 71500000.0,
+      "upper": 80500000.0,
+      "confidence": 0.9,
+      "model_name": "subsea_epc_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-AVN-REV-Q3",
+      "entity_id": "Project-Avionics-Defense-2026",
+      "metric": "revenue",
+      "period": "2025-Q3",
+      "point_estimate": 44000000.0,
+      "lower": 39000000.0,
+      "upper": 49000000.0,
+      "confidence": 0.9,
+      "model_name": "avionics_cost_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-AVN-REV-Q4",
+      "entity_id": "Project-Avionics-Defense-2026",
+      "metric": "revenue",
+      "period": "2025-Q4",
+      "point_estimate": 48500000.0,
+      "lower": 43000000.0,
+      "upper": 54000000.0,
+      "confidence": 0.9,
+      "model_name": "avionics_cost_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-AVN-CST-Q3",
+      "entity_id": "Project-Avionics-Defense-2026",
+      "metric": "cost",
+      "period": "2025-Q3",
+      "point_estimate": 32500000.0,
+      "lower": 30000000.0,
+      "upper": 35000000.0,
+      "confidence": 0.9,
+      "model_name": "avionics_cost_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-AVN-CST-Q4",
+      "entity_id": "Project-Avionics-Defense-2026",
+      "metric": "cost",
+      "period": "2025-Q4",
+      "point_estimate": 34000000.0,
+      "lower": 31500000.0,
+      "upper": 36500000.0,
+      "confidence": 0.9,
+      "model_name": "avionics_cost_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-CLN-REV-Q3",
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "metric": "revenue",
+      "period": "2025-Q3",
+      "point_estimate": 33200000.0,
+      "lower": 31000000.0,
+      "upper": 35500000.0,
+      "confidence": 0.9,
+      "model_name": "cleantech_ferry_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-CLN-REV-Q4",
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "metric": "revenue",
+      "period": "2025-Q4",
+      "point_estimate": 37000000.0,
+      "lower": 34000000.0,
+      "upper": 40000000.0,
+      "confidence": 0.9,
+      "model_name": "cleantech_ferry_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-CLN-CST-Q3",
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "metric": "cost",
+      "period": "2025-Q3",
+      "point_estimate": 27800000.0,
+      "lower": 26000000.0,
+      "upper": 29500000.0,
+      "confidence": 0.9,
+      "model_name": "cleantech_ferry_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    },
+    {
+      "forecast_id": "FC-CLN-CST-Q4",
+      "entity_id": "Project-CleanTech-Ferry-2026",
+      "metric": "cost",
+      "period": "2025-Q4",
+      "point_estimate": 28500000.0,
+      "lower": 26500000.0,
+      "upper": 30500000.0,
+      "confidence": 0.9,
+      "model_name": "cleantech_ferry_forecaster",
+      "model_version": "v2026.1",
+      "forecast_as_of": "2026-09-13T07:38:25.805828+00:00",
+      "data_as_of": "2025-07-05T00:00:00Z"
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "DOC-PROPULSION-01",
+      "title": "Project-Vessel-2026: Propulsion System Delivery & Subcontractor Price Adjustment Memo",
+      "document_type": "technical_memo",
+      "period": "2025-Q2",
+      "version": "1.1",
+      "source_uri": "sharepoint://projects/vessel-2026/memos/propulsion_q2.pdf",
+      "content": "Summary of Subcontractor Overrun in Q2:\nThe waterjet and turbine integration milestone incurred an unexpected +4.0M NOK cost increase.\nRoot causes:\n1. Extended drydock alignment tolerance requirements demanded 280 additional engineering labor hours.\n2. The German subcontractor invoiced indexation surcharges under clause 14.3 due to raw titanium price spikes.\nStatus: Milestone successfully passed factory acceptance tests on June 28. Future quarters are expected to stabilize."
+    },
+    {
+      "document_id": "DOC-MILESTONE-REV-02",
+      "title": "Project-Vessel-2026: Customer Milestone Billing Postponement Notice (Q2)",
+      "document_type": "billing_notice",
+      "period": "2025-Q2",
+      "version": "1.0",
+      "source_uri": "sharepoint://projects/vessel-2026/billing/milestone_q2_deferral.pdf",
+      "content": "Milestone Certificate Signing Delay:\nRevenue recognition of 5.0M NOK was delayed from late Q2 to early Q3.\nCustomer QA inspector requested re-verification of the composite hull ultrasonic weld tests.\nThe test was re-certified as compliant on July 2. Revenue will be billed and recognized in 2025-Q3 with zero contract value loss."
+    },
+    {
+      "document_id": "POL-FIN-2026-01",
+      "title": "Corporate Project Controlling Variance and Escalation Policy",
+      "document_type": "governance_policy",
+      "period": "2026",
+      "version": "1.0",
+      "source_uri": "internal://policies/POL-FIN-2026-01.yaml",
+      "content": "Policy POL-FIN-2026-01:\nVariances exceeding 5% in period cost or revenue require formal root-cause investigation.\nCost overruns exceeding 10% on cumulative EAC require Project Board contingency authorization.\nForecast numbers produced by statistical/ML models must be treated as immutable evidence and never altered manually."
+    },
+    {
+      "document_id": "DOC-SUBSEA-HYPERBARIC-01",
+      "title": "Project-Subsea-Platform-2026: Deepwater Hyperbaric Manifold Weld Report",
+      "document_type": "technical_memo",
+      "period": "2025-Q2",
+      "version": "1.2",
+      "source_uri": "sharepoint://projects/subsea-platform/memos/hyperbaric_manifold_q2.pdf",
+      "content": "Subsea EPC Manifold Cost Overrun:\nCost exceeded budget by +8.5M NOK (+13.1%) in 2025-Q2 due to duplex stainless steel welding and non-destructive examination (NDE).\nSpecialized diving vessel standby hours accumulated during severe North Sea weather window, generating 420 additional vessel day-rate charges.\nStructural integrity hydrostatic pressure tests completed at 350 bar with zero defect detection."
+    },
+    {
+      "document_id": "DOC-SUBSEA-STEEL-INDEX-02",
+      "title": "Project-Subsea-Platform-2026: Dutch Forging Alloy Surcharge Notice",
+      "document_type": "commercial_notice",
+      "period": "2025-Q2",
+      "version": "1.0",
+      "source_uri": "sharepoint://projects/subsea-platform/contracts/subcontractor_alloy_indexation.pdf",
+      "content": "Commercial Claim on Steel Forgings:\nSubcontractor passed through +5.2M NOK in alloy surcharges under contract formula 8.2 (LME nickel and molybdenum price shifts).\nCommercial management has reviewed the calculation: 3.8M NOK is verified as contractually reimbursable; 1.4M NOK is disputed and placed in negotiation escrow."
+    },
+    {
+      "document_id": "DOC-AVIONICS-RADAR-01",
+      "title": "Project-Avionics-Defense-2026: Radar Processor Delivery & Licensing Delay",
+      "document_type": "technical_memo",
+      "period": "2025-Q2",
+      "version": "1.0",
+      "source_uri": "sharepoint://projects/avionics-defense/memos/radar_dsp_delivery.pdf",
+      "content": "Avionics Mil-Spec Radar DSP Chipset Delay:\nRevenue of 7.5M NOK was deferred due to US State Department export license (ITAR) processing taking 7 weeks longer than baseline.\nHardware was delivered to Kongsberg assembly line on July 4. Ground integration testing demonstrated 99.4% signal-to-noise ratio performance."
+    },
+    {
+      "document_id": "DOC-AVIONICS-FLIGHT-02",
+      "title": "Project-Avionics-Defense-2026: Flight Campaign Rescheduling Notice",
+      "document_type": "operational_notice",
+      "period": "2025-Q2",
+      "version": "1.0",
+      "source_uri": "sharepoint://projects/avionics-defense/flight/andoya_campaign_reschedule.pdf",
+      "content": "Flight Test Campaign at And\u00f8ya Spaceport:\nFlight verification campaign scheduled for late June was shifted to mid-August 2025.\nNo penalty clause activated by the defense procurement agency (NDMA/FMA) as technical milestones remain ahead of the annual release gate."
+    },
+    {
+      "document_id": "DOC-CLEANTECH-BESS-01",
+      "title": "Project-CleanTech-Ferry-2026: 4.2 MWh Marine BESS Commissioning Report",
+      "document_type": "technical_memo",
+      "period": "2025-Q2",
+      "version": "1.0",
+      "source_uri": "sharepoint://projects/cleantech-ferry/bess/bess_commissioning_q2.pdf",
+      "content": "BESS Battery Pack Acceptance:\nLiquid-cooled marine battery storage racks installed on vessel lower deck with zero safety incidents.\nPre-commissioning test confirmed 98.9% cell balancing efficiency, satisfying DNV battery vessel notation rules.\nProject costs ran within +4.1% of baseline, well inside the contingency envelope."
+    },
+    {
+      "document_id": "DOC-CLEANTECH-GRANT-02",
+      "title": "Project-CleanTech-Ferry-2026: Nordic Decarbonization Grant Milestone Notification",
+      "document_type": "grant_notice",
+      "period": "2025-Q2",
+      "version": "1.0",
+      "source_uri": "sharepoint://projects/cleantech-ferry/grants/enova_milestone_claim.pdf",
+      "content": "Enova / EU Horizon Grant Progress:\nMilestone claim 3 for 3.0M NOK grant disbursement submitted following static shore-power charging connection tests.\nCash transfer approved for Q3 disbursement."
+    }
+  ],
+  "feedback": [
+    {
+      "feedback_id": "FB-VESSEL-01",
+      "analysis_id": "AN-VES-2025-Q2-001",
+      "decision": "approved",
+      "actual_outcome": "Customer accepted weld re-inspection July 2; invoice for 5.0M NOK issued July 10.",
+      "reviewer": "Frank Ellingsen (Lead Project Controller)",
+      "timestamp": "2025-07-12T14:30:00Z",
+      "comments": "Reviewed root cause for clause 14.3 titanium surcharge. Cap enforced on remaining delivery tranches."
+    },
+    {
+      "feedback_id": "FB-SUBSEA-01",
+      "analysis_id": "AN-SUB-2025-Q2-001",
+      "decision": "investigate",
+      "actual_outcome": "Commercial dispute notice sent to Dutch forge supplier for 1.4M NOK disallowed surcharge.",
+      "reviewer": "Frank Ellingsen (Lead Project Controller)",
+      "timestamp": "2025-07-14T09:15:00Z",
+      "comments": "EAC cost overrun (+13.1%) breached 10% threshold. Escalated to Offshore Project Board for contingency draw."
+    },
+    {
+      "feedback_id": "FB-AVIONICS-01",
+      "analysis_id": "AN-AVN-2025-Q2-001",
+      "decision": "approved",
+      "actual_outcome": "ITAR clearance granted; flight tests booked for August 18 at And\u00f8ya.",
+      "reviewer": "Frank Ellingsen (Lead Project Controller)",
+      "timestamp": "2025-07-15T11:00:00Z",
+      "comments": "Revenue slip is purely timing; contract profit margin preserved at 23.4%."
+    },
+    {
+      "feedback_id": "FB-CLEANTECH-01",
+      "analysis_id": "AN-CLN-2025-Q2-001",
+      "decision": "approved",
+      "actual_outcome": "BESS battery energized successfully; Enova confirmed Q3 disbursement.",
+      "reviewer": "Frank Ellingsen (Lead Project Controller)",
+      "timestamp": "2025-07-16T16:20:00Z",
+      "comments": "Stable execution within +/- 4% variance tolerance. On track for commercial sea trials in October."
+    }
+  ]
+}
