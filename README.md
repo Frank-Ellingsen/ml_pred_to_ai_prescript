@@ -97,14 +97,23 @@ finance-run-analysis
 finance-train
 ```
 
+The CLI also exposes a runtime-status command to inspect the active database and environment settings:
+
+```bash
+python -m finance_ai.cli status
+```
+
 You can also invoke the CLI module directly:
 
 ```bash
 python -m finance_ai.cli init-database
 python -m finance_ai.cli seed-database
+python -m finance_ai.cli status
 python -m finance_ai.cli run-analysis
 python -m finance_ai.cli train-models
 ```
+
+Project runtime values are loaded from `.env` automatically when present, so you can keep local configuration in the project root without hardcoding secrets or paths.
 
 ## Training Workflow
 

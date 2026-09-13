@@ -1,5 +1,7 @@
 """Typed data access repository for SQLite persistence."""
 
+import sqlite3
+from contextlib import suppress
 from decimal import Decimal
 from pathlib import Path
 from typing import Any
@@ -303,10 +305,8 @@ def insert_document(doc: dict[str, Any], db_path: Path | str | None = None) -> N
                 doc["content"],
             ),
         )
-        try:
+        with suppress(sqlite3.OperationalError):
             conn.execute(fts_sql, (doc["document_id"], doc["title"], doc["content"]))
-        except sqlite3.OperationalError:
-            pass
 
 
 def insert_feedback(feedback: dict[str, Any], db_path: Path | str | None = None) -> None:

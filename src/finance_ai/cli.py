@@ -1,12 +1,15 @@
 """Command Line Interface for Project Finance AI."""
 
 import argparse
-import json
-import sys
+import os
+from pathlib import Path
 
+from finance_ai.config import get_database_path, load_environment
 from finance_ai.database.repository import init_db
 from finance_ai.database.seed_data import seed_database as seed_db_fn
 from finance_ai.orchestration.analysis_flow import FinancialAnalysisFlow
+
+load_environment()
 
 
 def init_database() -> None:
@@ -21,6 +24,18 @@ def seed_database() -> None:
     print("Seeding SQLite database with project controlling data (NOK)...")
     seed_db_fn()
     print("Database seeded successfully.")
+
+
+def status() -> None:
+    """Print the current runtime configuration and database health."""
+    db_path = Path(get_database_path())
+    print("Project Finance AI status")
+    print(f"database_path={db_path}")
+    print(f"database_exists={db_path.exists()}")
+    if db_path.exists():
+        print(f"database_size_bytes={db_path.stat().st_size}")
+    print(f"default_currency={os.getenv('DEFAULT_CURRENCY', 'NOK')}")
+    print(f"mlflow_tracking_uri={os.getenv('MLFLOW_TRACKING_URI', 'not-set')}")
 
 
 def run_analysis(
@@ -45,6 +60,7 @@ def run_analysis(
 def train_models() -> None:
     """Train predictive forecasting models and save artifacts, optionally logging to MLflow."""
     import numpy as np
+
     from finance_ai.ml.forecaster import ProjectCostForecaster
     from finance_ai.ml.mlflow_tracking import log_training_run
 
@@ -86,6 +102,7 @@ def main() -> None:
 
     subparsers.add_parser("init-database", help="Initialize SQLite tables")
     subparsers.add_parser("seed-database", help="Seed database with sample data")
+    subparsers.add_parser("status", help="Inspect local runtime configuration and database health")
 
     analyze_parser = subparsers.add_parser("run-analysis", help="Run financial analysis flow")
     analyze_parser.add_argument("--question", default="Why is revenue below budget and what should I investigate?")
@@ -101,6 +118,8 @@ def main() -> None:
         init_database()
     elif args.command == "seed-database":
         seed_database()
+    elif args.command == "status":
+        status()
     elif args.command == "run-analysis":
         run_analysis(
             question=args.question,

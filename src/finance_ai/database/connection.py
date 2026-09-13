@@ -1,20 +1,23 @@
 """SQLite connection manager with WAL mode and robust error handling."""
 
+import os
+import sqlite3
 from collections.abc import Generator
 from contextlib import contextmanager
-import os
 from pathlib import Path
-import sqlite3
+
+from finance_ai.config import get_database_path, load_environment
 
 DEFAULT_DB_PATH = Path("data/processed/finance.db")
 
 
 def get_db_path() -> Path | str:
     """Resolve the active database path from environment or default."""
+    load_environment()
     env_path = os.getenv("DATABASE_PATH")
     if env_path:
         return env_path
-    return DEFAULT_DB_PATH
+    return get_database_path()
 
 
 @contextmanager
